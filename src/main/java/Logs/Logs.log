@@ -1,0 +1,15 @@
+14:04:21.785 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\zeroc\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+14:05:06.408 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\zeroc\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+14:09:17.092 [main] INFO  Logger.MyLogger - Error al leer el archivo de configuraciónjava.io.FileNotFoundException: Config\config.json (El sistema no puede encontrar la ruta especificada)
+14:10:55.753 [main] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115
+14:10:55.781 [main] WARN  io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_115)
+14:10:55.907 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\zeroc\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
+14:10:58.681 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\zeroc\AppData\Local\JetBrains\IdeaIC2022.3\temp-testng-customsuite.xml
+
+14:11:02.848 [main] INFO  Logger.MyLogger - Go to the Page: https://demoqa.com
+14:11:02.866 [main] INFO  Logger.MyLogger - End of the Test

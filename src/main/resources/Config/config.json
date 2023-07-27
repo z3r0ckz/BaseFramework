@@ -1,0 +1,7 @@
+{
+"browserOpt": "chrome",
+"baseUrl": "https://demoqa.com",
+"username": "mi_nombre_de_usuario",
+"password": "mi_contraseña_secreta",
+"timeout": 10
+}
