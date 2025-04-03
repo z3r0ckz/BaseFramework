@@ -1,6 +1,10 @@
 [
   {
     "browserMode": "-private",
-    "language": "lang=en-GB"
+    "language": "en-GB",
+    "disableTrackingProtection": true,
+    "acceptInsecureCerts": true,
+    "disableSafeBrowsing": true,
+    "allowMixedContent": true
   }
 ]

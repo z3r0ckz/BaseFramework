@@ -11,7 +11,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public class BrowserFactory {
     private static WebDriver driver;
     private static final String browserOpt = ConfigManager.get("browserOpt");
-    public static <browserOpt> WebDriver getDriver(){
+
+    public static WebDriver getDriver(){
         WebDriver result = null;
         switch (browserOpt){
             case "chrome" -> {
@@ -23,14 +24,13 @@ public class BrowserFactory {
                 }
             }
             case "firefox" -> {
-                if (driver ==null){
-                    FirefoxOptions options = new FirefoxOptions();
-                    options.addArguments(FirefoxCaps.readFirefoxBrowserConfig());
+                if (driver == null){
+                    FirefoxOptions options = FirefoxCaps.getFirefoxOptions(); // 🔹 Cambiado aquí
                     WebDriverManager.firefoxdriver().setup();
                     result = new FirefoxDriver(options);
                 }
             }
-            default -> throw new IllegalArgumentException("Invalid browser name: "+ browserOpt);
+            default -> throw new IllegalArgumentException("Invalid browser name: " + browserOpt);
         }
         if (result == null){
             result = driver;

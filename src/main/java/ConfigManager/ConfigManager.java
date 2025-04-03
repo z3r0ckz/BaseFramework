@@ -12,7 +12,8 @@ public class ConfigManager {
     private static final String CONFIG_FILE_PATH = "src/main/resources/Config/config.xlsx";
     private static Map<String, String> config = new HashMap<>();
 
-    public static void loadConfig() {
+    @SuppressWarnings("deprecation")
+	public static void loadConfig() {
         try (FileInputStream file = new FileInputStream(CONFIG_FILE_PATH);
              Workbook workbook = new XSSFWorkbook(file)) {
 
